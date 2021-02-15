@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register User</title>
+</head>
+<body>
+
+<h1>Spring MVC Program</h1>
+<p>Welcome to MVC Demo</p>
+<form th:action="@{/saveData}" th:object="${user}" method="post">
+    <label>FirstName: </label>
+    <input type="text" id="fname">
+    <label>LastName: </label>
+    <input type="text" id="lname">
+    <label>Email: </label>
+    <input type="email" id="email">
+    <label>Password: </label>
+    <input type="password" id="password">
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
