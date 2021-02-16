@@ -17,7 +17,12 @@ public class MyController {
 
     @PostMapping("/saveData")
     public String saveUser(User user){
-
+        System.out.println("FirstName: "+user.getFirstName());
+        System.out.println("LastName: "+user.getLastName());
+        System.out.println("Id: "+user.getEmail());
+        System.out.println("Password: "+user.getPassword());
         return "success";
     }
+
+
 }
